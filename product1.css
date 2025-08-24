@@ -1,0 +1,430 @@
+/*--------------1.引入外部字體-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/*----------- 2.基本設定------------------ */
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);/*套用變數*/
+}
+
+a {
+    color: var(--neutral-900);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+
+img {
+    vertical-align: middle;/*清除img下方空白*/
+    max-width: 100%; /*最大寬不超過瀏覽器寬度*/
+    height: auto;/*避免變形*/
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    border: none;
+    cursor: pointer; /*手型*/
+    background-color: transparent;/*透明*/
+}
+
+
+
+.bi {
+  vertical-align: bottom; /* icon與父容器底部對齊 */
+}
+
+/*--2-1.定義全域變數-顏色--*/
+:root {/*特殊選擇器,定義全域變數*/
+    --primary-100:#f5fee7;
+    --primary-200: #e8FEC5;  
+    --primary-300: #c0fa73;     
+    --primary-400: #57A203;
+    --primary-500: #477a11;  
+    --neutral-0: #ffffff;
+    --neutral-100: #f8f9fa;
+    --neutral-200: #e9ecef;    
+    --neutral-300: #dee2e6;
+    --neutral-400: #ced4da; 
+    --neutral-500: #adb5bd;      
+    --neutral-600: #6C757D;
+    --neutral-700: #495057; 
+    --neutral-800: #343a40;      
+    --neutral-900: #212529;
+    --danger-300:#d74f4f;
+}
+
+/*---------------3.通用樣式-------------------*/
+.container {
+    width: 1296px;/*內容寬度*/
+    margin: 0 auto;/*內容置中*/
+}
+
+/*--3-2字大小--*/
+.h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;   
+}
+.h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;   
+}
+.h5 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700; 
+}
+.h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700; 
+}
+
+.h6 {
+    font-size: 16px;
+    line-height: 1.2px;
+    font-weight: 700; 
+}
+
+
+/*--3-3.定義格線系統--*/
+.row {/*父層*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.col-1 {/*調寬度*/
+    width: calc(100%/12); /*計算函數,元素的寬度等於容器寬度的 1/12*/ 
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-2 {/*調寬度*/
+    width: calc(100%/12*2);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-3 {/*調寬度*/
+    width: calc(100%/12*3);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-4 {/*調寬度*/
+    width: calc(100%/12*4);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-5 {/*調寬度*/
+    width: calc(100%/12*5);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-6 {/*調寬度*/
+    width: calc(100%/12*6);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-7 {/*調寬度*/
+    width: calc(100%/12*7);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-8 {/*調寬度*/
+    width: calc(100%/12*8);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-9 {/*調寬度*/
+    width: calc(100%/12*9);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-10 {/*調寬度*/
+    width: calc(100%/12*10);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-11 {/*調寬度*/
+    width: calc(100%/12*11);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-12 {/*調寬度*/
+    width: calc(100%/12*12);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/*--3-3-1.定義產品格線系統--*/
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.product-col-6 {
+    width: calc(100%/12*6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+
+
+/*--3-4.顏色套用--*/
+.text-danger-300 {
+    color: var(--danger-300);
+}
+.text-neutral-white {
+    color: var(--neutral-0); 
+}
+
+.text-primary-400 { 
+    color: var(--primary-400);
+}
+.text-neutral-500 {
+    color: var(--neutral-500)
+}
+.text-neutral-600 {
+    color: var(--neutral-600); 
+}
+.text-neutral-900 {
+    color: var(--neutral-900); 
+}
+.text.danger-300 {
+    color: var(--danger-300);
+}
+.bg-primary-100 {
+    background-color: var(--primary-100);
+}
+.bg-primary-200 {
+    background-color: var(--primary-200);
+}
+.bg-neutral-100 {
+    background-color: var(--neutral-100); 
+}
+
+/*--3-5間距套用--*/ 
+ 
+.p-8{
+    padding: 8px
+}
+.p-10 {
+    padding: 10x;
+}
+.p-12 {
+    padding: 12px;
+}
+.p-15 {  
+    padding: 15px;
+}
+.py-8 {  
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.py-12 {  
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.py-24 {  
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.py-17 {  
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.py-32 {  
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.py-33 {
+    padding-top: 33.5px;
+    padding-bottom: 33.5px;
+}
+.py-48 { 
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.py-64 { 
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.mb-4 {  
+    margin-bottom: 4px;
+}
+
+.mb-8 {  
+    margin-bottom: 8px;
+}
+.mb-12 {  
+    margin-bottom: 12px;
+}
+.mb-16 {  
+    margin-bottom: 16px;
+}
+.mb-24 {  
+    margin-bottom: 24px;
+}
+
+.mb-32 {  
+    margin-bottom: 32px;
+}
+
+.mb-48 {  
+    margin-bottom: 48px;
+}
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-12 {
+    margin-right: 12px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+.mr-48 {
+    margin-right: 48px;
+}
+/*--3-5-1.gap--*/ 
+.gap-8 {
+    gap: 8px;
+}
+
+/*--3-6.flex--*/ 
+.display-flex {
+    display: flex;
+}
+.justfy-between {
+    justify-content: space-between;
+}
+.justfy-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/*---元件---*/
+/*斜線*/
+.breadcrumb-item + .breadcrumb-item::before {/*-偽元素-除了第一個 item 之外，每個 item 前面都會被加樣式。*/
+    content: '/';
+    padding: 0 12px;
+    color: var(--neutral-300);
+
+}
+
+.breadcrumb-item {
+    display: flex;
+}
+
+.breadcrumb-link {
+    display: flex;
+    color: var(--neutral-600);
+}
+/*欄線*/
+.section-lined {  /* section 共用 border */
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+
+/*----------------------------4.page樣式------------------------------------*/ 
+/*----Product info-----*/
+/*---info---*/
+.del-price {
+    font-size: 14px;
+    font-weight: 400;
+    color:  var(--neutral-500);
+    padding-left: 8px;
+}
+
+/*---色---*/
+.product-color {
+    width: 64px;
+    padding-right: 8px;
+    text-align: center;
+    color: var(--neutral-600);
+
+}
+/*---size---*/
+.btn-size-option {
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+}
+
+.btn-size-option.active,
+.btn-size-option:hover {
+    border-color: var(--neutral-900);
+}
+/*---save&reserve---*/
+.save-resrve {
+    gap: 8px;
+}
+
+.save-resrve .btn {
+    width: 50%;
+}
+
+.btn-save {
+    border:1px solid var(--neutral-900);
+}
+
+.btn-dark {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+
+.save-resrve .bi {
+    padding-right: 8px;
+}
+/*---info---*/
+.info-item p {
+    color: var(--neutral-600);
+    font-weight: 400;
+}
+
+
+
+
+
+/*----------------banner-------------------*/
+.banner {
+    background-color: var(--primary-200);
+}
+
+.banner .btn {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+
+/*----------------footer--------------------*/
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid var(--neutral-300);
+}
