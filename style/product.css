@@ -1,0 +1,29 @@
+/*------------0-0.引入外部字體----------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import './allcssreset.css';
+@import './variables.css';
+@import './base.css';
+@import './utils.css';
+@import './components.css';
+@import './layout.css';
+
+
+/*----------------------------4.page樣式------------------------------------*/ 
+
+/* ---------------- Pagination ---------- */
+.page-number .btn {
+    padding: 8px 15px;/*已覆蓋前面預設的寬高*/
+    font-weight: 400;
+    border-radius:0px;
+    
+}
+
+.page-number :active {
+    font-weight: 500;
+    background-color: var(--primary-300);
+}
+
+
+
+

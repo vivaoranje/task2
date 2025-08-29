@@ -1,0 +1,418 @@
+/*---------------3.通用樣式-------------------*/
+.container {
+    max-width: 1320px;/*內容寬度因壓縮+24*/
+    margin: 0 auto;/*內容置中*/
+    padding-right:  12px;
+    padding-left: 12px;
+}
+
+
+
+/*----------3-1.flex---------*/     
+.display-flex {
+    display: flex;
+}
+.justfy-between {
+    justify-content: space-between;
+}
+.justfy-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.display-none{
+    display: none;
+}
+
+
+
+
+/*----------3-1-2.rwd-block---------*/   
+@media (max-width: 767px) {
+    .d-md-block {
+        display: block; 
+    }
+    .d-md-none {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .d-sm-block {
+        display: block;
+    }
+    .d-sm-none {
+        display: none;
+    }
+}
+
+
+
+/*----------3-2.gap-----------*/     
+.gap-8 {
+    gap: 8px;
+}
+
+
+
+
+/*--------3-3.定義格線系統-----*/  
+.row {/*父層*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.col-1 {/*調寬度*/
+    width: calc(100%/12); /*計算函數,元素的寬度等於容器寬度的 1/12*/ 
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-2 {/*調寬度*/
+    width: calc(100%/12*2);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-3 {/*調寬度*/
+    width: calc(100%/12*3);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-4 {/*調寬度*/
+    width: calc(100%/12*4);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-5 {/*調寬度*/
+    width: calc(100%/12*5);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-6 {/*調寬度*/
+    width: calc(100%/12*6);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-7 {/*調寬度*/
+    width: calc(100%/12*7);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-8 {/*調寬度*/
+    width: calc(100%/12*8);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-9 {/*調寬度*/
+    width: calc(100%/12*9);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-10 {/*調寬度*/
+    width: calc(100%/12*10);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-11 {/*調寬度*/
+    width: calc(100%/12*11);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-12 {/*調寬度*/
+    width: calc(100%/12*12);    
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/*--3-3-1.定義產品格線系統--*/
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.product-col-6 {
+    width: calc(100%/12*6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+/*--3-3-2.rwd格線系統--*/
+@media (max-width: 767px) {
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    .col-md-1 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4);
+    }
+    .col-md-2 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100%/4*2);
+    }
+    .col-md-3 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/3);
+    }
+    .col-md-4 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100%/4*4);
+    }
+}
+
+/*--3-4.字大小--*/
+
+.text-sm { 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;   
+}
+.h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;   
+}
+.h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;   
+}
+.h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700; 
+}
+.h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700; 
+}
+.h6 {
+    font-size: 16px;
+    line-height: 1.2px;
+    font-weight: 700; 
+}
+
+@media(max-width:767px){
+    .h3-md{
+        font-size: 28px;
+    }
+    .h4-md{
+        font-size: 24px;
+    }
+    .h5-md{
+        font-size: 20px;
+    }
+    .h6-md{
+        font-size: 16px;
+    }
+}
+@media(max-width:576px){
+    .h3-sm{
+        font-size: 28px;
+    }
+    .h4-sm{
+        font-size: 24px;
+    }
+    .h5-sm{
+        font-size: 20px;
+    }
+    .h6-sm{
+        font-size: 16px;
+    }
+}
+
+
+
+/*----------3-5.間距套用------------*/       
+ 
+.p-8{
+    padding: 8px
+}
+.p-10 {
+    padding: 10x;
+}
+.p-12 {
+    padding: 12px;
+}
+.p-15 {  
+    padding: 15px;
+}
+.p-32 {  
+    padding: 32px;
+}
+
+.py-8 {  
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.py-12 {  
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.py-24 {  
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.py-16 {  
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.py-32 {  
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.py-33 {
+    padding-top: 33.5px;
+    padding-bottom: 33.5px;
+}
+.py-48 { 
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.py-64 { 
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.mb-4 {  
+    margin-bottom: 4px;
+}
+
+.mb-8 {  
+    margin-bottom: 8px;
+}
+.mb-12 {  
+    margin-bottom: 12px;
+}
+.mb-16 {  
+    margin-bottom: 16px;
+}
+.mb-24 {  
+    margin-bottom: 24px;
+}
+
+.mb-32 {  
+    margin-bottom: 32px;
+}
+
+.mb-48 {  
+    margin-bottom: 48px;
+}
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+.pb-48 {
+    padding-bottom: 48px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-12 {
+    margin-right: 12px;
+}
+.mr-24 {
+    margin-right: 24px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+.mr-48 {
+    margin-right: 48px;
+}
+
+@media(max-width:767px){
+
+    .p-md-24 {/*---*/
+        padding: 24px;
+    }
+    .py-md-24{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .py-md-32{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .pb-md-12 {
+        padding-bottom: 12px;
+    }
+    .pb-md-24 {
+        padding-bottom: 24px;
+    }
+    .mb-md-4{
+        margin-bottom: 4px;
+    }
+    .mb-md-8{
+        margin-bottom: 8px;
+    }
+    .mb-md-20{
+        margin-bottom: 20px;
+    }
+    .mb-md-32{
+        margin-bottom: 32px;
+    }
+    .mr-md-16 {
+        margin-right: 16px;
+    }
+    .mr-md-24 {
+        margin-right: 24px;
+    }
+}
+
+@media(max-width:576px){
+    .p-sm-12 {
+        padding: 12px;
+
+    }
+    .px-sm-12 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .py-sm-12{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .py-sm-32{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .mb-sm-8{
+        margin-bottom: 8px;
+    }
+    .mr-sm-16{
+        margin-bottom: 16px;
+    }
+}
+
+
+
+
+
+/*-------3-6.icon-----------*/
+.bi {
+  vertical-align: bottom; /* icon與父容器底部對齊 */
+}

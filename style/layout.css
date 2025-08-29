@@ -1,0 +1,26 @@
+/*------------5.layout----------------*/
+/* ------header----------- */       
+.header{/* header 大圖背景 */
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+	background-repeat: no-repeat;
+	background-size: cover;/*將背景圖「等比例放大」，完全覆蓋整個容器，即使有部分圖片可能被裁切也沒關係*/
+	background-position: center;
+	padding: 152px 0;
+	text-align: center;
+}
+
+/*------------footer----------------*/
+/*--------banner---------*/ 
+.banner {
+    background-color: var(--primary-200);
+}
+.banner .btn {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+
+/*--------copyright---------*/ 
+.copyright {
+    text-align: center;
+    color: var(--neutral-500);
+}

@@ -1,0 +1,28 @@
+/*------------1-0.基本設定-------------*/
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);/*套用變數*/
+}
+
+a {
+    color: var(--neutral-900);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+  
+}
+
+img {
+    vertical-align: middle;/*清除img下方空白*/
+    max-width: 100%; /*最大寬不超過瀏覽器寬度*/
+    height: auto;/*避免變形*/
+}

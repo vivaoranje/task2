@@ -1,0 +1,50 @@
+/*-----------4.元件------------*/
+/*斜線*/
+.breadcrumb-item + .breadcrumb-item::before {/*-偽元素-除了第一個 item 之外，每個 item 前面都會被加樣式。*/
+    content: '/';
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+
+}
+
+.breadcrumb-item {
+    display: flex;
+    font-weight: 500;
+}
+
+.breadcrumb-link {
+    display: flex;
+    color: var(--neutral-600);
+}
+
+/*欄線*/
+.section-lined {  /* section 共用 border */
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+/*按鈕*/
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    border: none;
+    cursor: pointer; /*手型*/
+    background-color: transparent;/*透明*/
+}
+
+@media (max-width: 576){
+    .btn {
+        padding: 8px 16px ; 
+    }
+}
+
+.btn-dark {
+    background-color: var(--neutral-900);
+}
+
+.btn-light {
+    border: 1px solid var(--neutral-900);
+}

@@ -1,0 +1,54 @@
+
+/*---------2.定義全域變數-顏色--------*/
+:root {/*特殊選擇器,定義全域變數*/
+    --primary-100:#f5fee7;
+    --primary-200: #e8FEC5;  
+    --primary-300: #c0fa73;     
+    --primary-400: #57A203;
+    --primary-500: #477a11;  
+    --neutral-0: #ffffff;
+    --neutral-100: #f8f9fa;
+    --neutral-200: #e9ecef;    
+    --neutral-300: #dee2e6;
+    --neutral-400: #ced4da; 
+    --neutral-500: #adb5bd;      
+    --neutral-600: #6C757D;
+    --neutral-700: #495057; 
+    --neutral-800: #343a40;      
+    --neutral-900: #212529;
+    --danger-300:#d74f4f;
+}
+
+
+
+/*--顏色套用--*/
+.text-danger-300 {
+    color: var(--danger-300);
+}
+.text-neutral-white {
+    color: var(--neutral-0); 
+}
+.text-primary-400 { 
+    color: var(--primary-400);
+}
+.text-neutral-500 {
+    color: var(--neutral-500)
+}
+.text-neutral-600 {
+    color: var(--neutral-600); 
+}
+.text-neutral-900 {
+    color: var(--neutral-900); 
+}
+.text.danger-300 {
+    color: var(--danger-300);
+}
+.bg-primary-100 {
+    background-color: var(--primary-100);
+}
+.bg-primary-200 {
+    background-color: var(--primary-200);
+}
+.bg-neutral-100 {
+    background-color: var(--neutral-100); 
+}

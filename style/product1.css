@@ -1,0 +1,74 @@
+
+/*------------0-0.引入外部字體----------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/*-------------0-1.引入----------*/
+@import './allcssreset.css';
+@import './variables.css';
+@import './base.css';
+@import './utils.css';
+@import './components.css';
+@import './layout.css';
+
+
+
+
+
+/*----------------------------page樣式------------------------------------*/ 
+/*----Product info-----*/
+/*---info---*/
+.del-price {
+    font-size: 14px;
+    font-weight: 400;
+    color:  var(--neutral-500);
+    padding-left: 8px;
+}
+
+/*---色---*/
+.product-color {
+    width: 64px;
+    padding-right: 8px;
+    text-align: center;
+    color: var(--neutral-600);
+
+}
+/*---size---*/
+.btn-size-option {
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+}
+
+.btn-size-option.active,
+.btn-size-option:hover {
+    border-color: var(--neutral-900);
+}
+/*---save&reserve---*/
+.save-resrve {
+    gap: 8px;
+}
+
+.save-resrve .btn {
+    width: 50%;
+}
+
+.btn-save {
+    border:1px solid var(--neutral-900);
+}
+
+.btn-dark {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+
+.save-resrve .bi {
+    padding-right: 8px;
+}
+/*---info---*/
+.info-item p {
+    color: var(--neutral-600);
+    font-weight: 400;
+}
+
+
+
